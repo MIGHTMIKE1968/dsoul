@@ -1,0 +1,55 @@
+
+.navbar-inverse{
+  background: #140660;
+}
+
+.navbar-inverse{
+  background: #140660;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.menu {
+  transition: 0.4s;
+  padding: 0 10px;
+}
+
+.menu:hover {
+  background-color: #c3b8f9;
+}
+
+.btn-normal {
+	color: #3c03b7;
+	background: #f9f509;
+	border: none;
+}
+
+.btn-normal:hover {
+	background-color: #c3b8f9;
+	border: none;
+}
+
+.envelope:hover {
+  color: #f9f509;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
