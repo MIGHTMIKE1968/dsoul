@@ -51,5 +51,15 @@
   padding-bottom: 5px;
 }
 
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #01af07;
+   color: white;
+   text-align: center;
+   padding-top: 20px;
+}
+
 
 

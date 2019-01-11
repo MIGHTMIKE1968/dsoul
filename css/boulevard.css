@@ -1,0 +1,151 @@
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+body {
+    padding-top: 70px;
+}
+.navbar-inverse{
+  background: #140660;
+}
+
+.navbar-inverse{
+  background: #140660;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.menu {
+  transition: 0.4s;
+  padding: 0 10px;
+}
+
+.menu:hover {
+  background-color: #c3b8f9;
+}
+
+.btn-normal {
+	color: #3c03b7;
+	background: #f9f509;
+	border: none;
+}
+
+.btn-normal:hover {
+	background-color: #c3b8f9;
+	border: none;
+}
+
+.envelope:hover {
+  color: #f9f509;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer {
+   width: 100%;
+   background-color: #140660;
+   color: white;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+h2 {
+	text-align: justify;
+	font-family: Cabin;
+	font-style: normal;
+	font-size: 1.35vw;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 25px;
+	line-height: 28px;
+    padding-top: 20px;
+}
+
+.social {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.word1 {
+    color: #cc3c0c;
+}
+
+.word2 {
+    color: #140660;
+}
+
+.word3 {
+    color: #cc3c0c;
+}
+
+.word4 {
+    color: #5613a3;
+}
+
+.head {
+    font-family: Staatliches;
+    text-align: center;
+    font-size: 65px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    animation: moveInLeft 5s ease-in;
+}
+
+h5{
+   font-family: Cabin; 
+   font-size: 12px;
+   padding-bottom: 20px;
+}
+
+.logo {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.row {
+    text-align: center;
+}
+
+
+
