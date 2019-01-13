@@ -1,4 +1,32 @@
+/* code that is here, until the first @media block, will apply to any screen size */
+#somethingorother {
+  width: 800px ;
+}
 
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
+
+/* code that is here will apply to any screen size */
+
+body {
+    padding-top: 70px;
+}
 .navbar-inverse{
   background: #140660;
 }
@@ -52,13 +80,232 @@
 }
 
 .footer {
-   left: 0;
-   bottom: 0;
    width: 100%;
-   background-color: #01af07;
+   background-color: #440277;
    color: white;
    text-align: center;
    padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+h2 {
+	font-family: Cabin;
+	font-style: normal;
+	line-height: normal;
+    padding-top: 10px;
+}
+
+.welcome {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.welcome2 {
+    text-align: justify;
+    font-size: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.6;
+}
+
+h4 {
+	text-align: center;
+	font-family: Cabin;
+	font-style: normal;
+	font-size: 12px;
+	line-height: normal;
+}
+
+h5{
+   font-family: Cabin; 
+   font-size: 12px;
+   padding-bottom: 20px;
+}
+
+.social {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.logo {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+.bg1 {
+    background-image: url("../img/soulslide1.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg2 {
+    background-image: url("../img/soulslide2.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg3 {
+    background-image: url("../img/soulslide3.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg4 {
+    background-image: url("../img/soulslide4.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg5 {
+    background-image: url("../img/soulslide5.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg6 {
+    background-image: url("../img/soulslide6.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg7 {
+    background-image: url("../img/soulslide7.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg8 {
+    background-image: url("../img/soulslide8.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg9 {
+    background-image: url("../img/soulslide9.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg10 {
+    background-image: url("../img/soulslide10.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg11 {
+    background-image: url("../img/soulslide11.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg12 {
+    background-image: url("../img/soulslide12.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.row {
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.header {
+  padding: 20px 0px 60px 0px;
+}
+
+.head {
+    color:#fffa00;
+    font-family: Cabin; 
+    font-size: 14px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+   color: #adf95c; 
+}
+
+.weatherwidget-io {
+    margin-top: -10px;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.active.right
+    .carousel-fade .carousel-inner > .item.active{
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 
