@@ -24,6 +24,18 @@
 
 /* code that is here will apply to any screen size */
 
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+
 body {
     padding-top: 70px;
 }
@@ -88,6 +100,16 @@ body {
    padding-bottom: 20px;
 }
 
+h1 {
+	font-family: Love Ya Like A Sister;
+    font-size: 8.5rem;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    color: #4901a0;
+    line-height: 0.7;
+    letter-spacing: 4px;
+}
+
 h2 {
 	font-family: Cabin;
 	font-style: normal;
@@ -95,20 +117,24 @@ h2 {
     padding-top: 10px;
 }
 
-.welcome {
-    font-size: 35px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-right: 10px;
-    padding-left: 10px;
+h3 {
+	font-family: Cabin;
+    font-size: 2.2rem;
+	font-style: normal;
+	line-height: normal;
 }
 
-.welcome2 {
+.text {
     text-align: justify;
-    font-size: 20px;
-    padding-right: 15px;
-    padding-left: 15px;
-    line-height: 1.6;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.text2 {
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #6201a8;
 }
 
 h4 {
@@ -125,8 +151,9 @@ h5{
    padding-bottom: 20px;
 }
 
+
 .social {
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
     text-align: center;
 }
 
@@ -136,89 +163,53 @@ h5{
 }
 
 .bg1 {
-    background-image: url("../img/soulslide1.jpg");
+    background-image: url("../img/paola_4.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg2 {
-    background-image: url("../img/soulslide2.jpg");
+    background-image: url("../img/paola_2.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg3 {
-    background-image: url("../img/soulslide3.jpg");
+    background-image: url("../img/paola_3.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg4 {
-    background-image: url("../img/soulslide4.jpg");
+    background-image: url("../img/paola_1.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg5 {
-    background-image: url("../img/soulslide5.jpg");
+    background-image: url("../img/paola_6.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg6 {
-    background-image: url("../img/soulslide6.jpg");
+    background-image: url("../img/paola_7.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg7 {
-    background-image: url("../img/soulslide7.jpg");
+    background-image: url("../img/paola_5.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
-
-.bg8 {
-    background-image: url("../img/soulslide8.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg9 {
-    background-image: url("../img/soulslide9.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg10 {
-    background-image: url("../img/soulslide10.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg11 {
-    background-image: url("../img/soulslide11.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg12 {
-    background-image: url("../img/soulslide12.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
 
 .carousel-fade .carousel-inner .item {
     opacity: 0;
@@ -229,6 +220,52 @@ h5{
     opacity: 1;
 }
 
+#myCarousel {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: rgb(109, 110, 112) 6px 6px 8px;
+    border-style: solid;
+    border-width: 16px;
+    border-color: white;
+}
+
+.picture {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%
+}
+
+.blog {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px 0px 10px 0px; 
+}
+
+.name {
+    color: #440277;
+    text-transform: uppercase;
+}
+
+.a {
+    color: #01b707;
+    font-size: 9.5rem;
+}
+
+.beach {
+    font-size: 10.5rem;
+    color: #e5410b;
+}
+
+.beach2 {
+    font-size: 10.5rem;
+    color: #6201a8;
+}
+
+.site {
+    color: #6201a8;
+}
 
 
 /* Grow */
@@ -266,7 +303,6 @@ h5{
 
 a:link {
     text-decoration: none;
-    color: white;
 }
 
 a:hover {
@@ -279,6 +315,10 @@ a:hover {
 
 .weatherwidget-io {
     margin-top: -10px;
+}
+
+.welcome {
+   animation: moveInRight 8s ease-out;
 }
 
 @media all and (transform-3d), (-webkit-transform-3d) {
