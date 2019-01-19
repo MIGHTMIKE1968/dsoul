@@ -123,6 +123,7 @@ h2 {
 	font-size: 1.8rem;
     text-transform: none;
     color: black;
+    line-height: 1.33;
 }
 
 .three {
@@ -130,7 +131,7 @@ h2 {
 	font-size: 1.8rem;
     text-transform: none;
     color: black;
-    line-height: 1.35;
+    line-height: 1.65;
 }
 
 .fa-mobile {

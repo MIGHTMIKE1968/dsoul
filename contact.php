@@ -1,4 +1,40 @@
-<!DOCTYPE html>
+<?php
+
+
+if ($_POST['submit']) {
+	
+	if (!$_POST['name']) {
+		$error="<br/>- Please enter your name";
+	}
+	
+	if (!$_POST['email']) {
+		$error.="<br/>- Please enter your email";
+	}
+	
+	if (!$_POST['message']) {
+		$error.="<br/>- Please enter a message";
+	}
+	
+	if (!$_POST['check']) {
+		$error.="<br/>- Please confirm you are human";
+	}
+	
+	if ($error) {
+		$results='<div class="alert alert-danger" role="alert"><strong>Sorry, there is an error.</strong> Please correct the following: '.$error.' </div';
+	} else {
+		mail("mike@dominicansoul.com", "Contact message", "Name: ".$_POST['name'].
+			"Email: ".$_POST['email'].
+			"Message: ".$_POST['message']);
+		{
+		$results='<div class="alert alert-success" role="alert"><stron>Thank you! We will get back in touch with you shortly.</div>';	
+		}
+	}
+}
+		   
+
+?>
+
+<!doctype html>
 <html lang="en">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -23,14 +59,15 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-    
+	
 </head>
+
 <body>
     
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		
 		<div class="container">
 			
@@ -110,129 +147,76 @@
 		
 	</nav>
     
-   <a class="weatherwidget-io" href="https://forecast7.com/en/19d78n70d69/puerto-plata/?unit=us" data-label_1="PUERTO PLATA" data-label_2="WEATHER" data-days="5" data-theme="original" data-basecolor="#3109b7" data-highcolor="#f9b96b" >PUERTO PLATA WEATHER</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/19d78n70d69/puerto-plata/?unit=us" data-label_1="PUERTO PLATA" data-label_2="WEATHER" data-days="5" data-theme="original" data-basecolor="#3109b7" data-highcolor="#f9b96b" >PUERTO PLATA WEATHER</a>
     <script>
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
     
-    <div class="header container">
-        	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-  		<!-- Indicators -->
-  			<ol class="carousel-indicators">
-    			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    			<li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-                <li data-target="#myCarousel" data-slide-to="5"></li>
-                <li data-target="#myCarousel" data-slide-to="6"></li>
-                <li data-target="#myCarousel" data-slide-to="7"></li>
-                <li data-target="#myCarousel" data-slide-to="8"></li>
-                <li data-target="#myCarousel" data-slide-to="9"></li>
-                <li data-target="#myCarousel" data-slide-to="10"></li>
-                <li data-target="#myCarousel" data-slide-to="11"></li>
-  			</ol>
-
-  		<!-- Wrapper for slides -->
-  		<div class="carousel-inner">
-    		<div class="item active bg1">
-      			<img src="img/soulslide1.jpg" width="100%" height="auto" alt="Playa Dorada"/>
-    		</div>
-
-    		<div class="item bg2">
-      			<img src="img/soulslide2.jpg" width="100%" height="auto" alt="Playa Dorada"/>
-    		</div>
-            
-            <div class="item bg3">
-      			<img src="img/soulslide3.jpg" width="100%" height="auto" alt="Dominican Cuisine"/>
-    		</div>
-            
-            <div class="item bg4">
-      			<img src="img/soulslide4.jpg" width="100%" height="auto" alt="Dominican Resort"/>
-    		</div>
-            
-            <div class="item bg5">
-      			<img src="img/soulslide5.jpg" width="100%" height="auto" alt="Dominican Carnival Mask"/>
-    		</div>
-            
-            <div class="item bg6">
-      			<img src="img/soulslide6.jpg" width="100%" height="auto" alt="Fort San Felipe"/>
-    		</div>
-            
-            <div class="item bg7">
-      			<img src="img/soulslide7.jpg" width="100%" height="auto" alt="Ocean World, Puerto Plata"/>
-    		</div>
-            
-            <div class="item bg8">
-      			<img src="img/soulslide8.jpg" width="100%" height="auto" alt="Mount Isabel de Torres"/>
-    		</div>
-            
-            <div class="item bg9">
-      			<img src="img/soulslide9.jpg" width="100%" height="auto" alt="Playa Dorada"/>
-    		</div>
-            
-            <div class="item bg10">
-      			<img src="img/soulslide10.jpg" width="100%" height="auto" alt="Merengue Band"/>
-    		</div>
-            
-            <div class="item bg11">
-      			<img src="img/soulslide11.jpg" width="100%" height="auto" alt="Pink Flamingos"/>
-    		</div>
-            
-            <div class="item bg12">
-      			<img src="img/soulslide12.jpg" width="100%" height="auto" alt="Beach Sunset"/>
-    		</div>
-   		</div>
-
-  		<!-- Left and right controls -->
-  		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    		<span class="glyphicon glyphicon-chevron-left"></span>
-    		<span class="sr-only">Previous</span>
-  		</a>
-  		<a class="right carousel-control" href="#myCarousel" data-slide="next">
-    		<span class="glyphicon glyphicon-chevron-right"></span>
-    		<span class="sr-only">Next</span>
-  		</a>
+		
+	<section id="contact">
+		<div class="container">
+		
+			<div class="row">
+				
+				<h1 class="welcome">Contact Form</h1>
+				
+				<div class="col-md-6 col-md-offset-3">
+					
+					<?php echo $results;?>
+					
+					<center>
+						<p><strong>Questions and comments are welcome. mike@dominicansoul.com</strong></p>
+					</center><br>
+					
+					<form method="post" role="form">
+						
+						<div class="form-group">
+							<input type="text" name="name" class="form-control" placeholder="Your Name" value="<?php echo $_POST['name']; ?>">
+						</div>
+						
+						<div class="form-group">
+							<input type="email" name="email" class="form-control" placeholder="Your Email" value="<?php echo $_POST['email']; ?>">
+						</div>
+						
+						<div class="form-group">
+							<textarea name="message" rows="8" class="form-control" placeholder="Message..."><?php echo $_POST['message']; ?></textarea>
+						</div>
+						
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="check"> I am human
+							</label>
+						</div>
+						
+						<div align="center">
+							<input type="submit" name="submit" class="btn btn-default" value="send message"/>
+						</div>
+						
+					</form>
+						  
+				</div>
+			</div>
+		
+		
 		</div>
-      
-    </div>
-    
-    <div class="container">
-        
-        <div class="row">
-            <div class="col-lg-6 col-sm-6">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/A4ndTRhUHU4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <div class="col-lg-6 col-sm-6">
-                <h2 class="welcome">
-                    Welcome to<br>
-                    dominicansoul.com<br>
-                </h2>
-                <h2 class="welcome2">We are your comprehensive
-                    online tour guide to the
-                    people, places and things
-                    of Puerto Plata, Sosua
-                    and their surrounding areas.
-                </h2>
-            </div>
-            
-        </div>
-        
+	</section>
+	
+	
+	<div class="container">
         <h4 class="social">
             <a href="#"><img src="img/facebook.png" class="hvr-grow social" width="4%" height="4%" alt=""/></a>
 		    <a href="#"><img src="img/twitter.png" class="hvr-grow social" width="4%" height="4%" alt=""/></a>
             <a href="#"><img src="img/instagram.png" class="hvr-grow social" width="4%" height="4%" alt=""/></a>
             <a href="https://www.youtube.com/channel/UCZV-adYfxKkXK18bYgdEujw"><img src="img/youtube.png" class="hvr-grow social" width="4%" height="4%" alt=""/></a>
         </h4>
-    </div>
+    </div><br><br>
     
     <div class="container footer">
 		<h4 logo>
             <a href="index.html"><img src="img/dsoul_logo.png" class="logo" width="21%" max-width: 400px; height="auto" alt=""/></a>
         </h4><br>
         
-        <div class="row">
+        <div class="row row2">
             <div class="col-md-2 col-sm-4">
                 <h4 class="head">DINING</h4>
                 <p><a href="#">Fine Dining</a></p>
@@ -284,8 +268,9 @@
     
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
-<script src="home.js"></script>
-    
+<script src="landmark.js"></script>
+	
+	
 </body>
 </html>
 

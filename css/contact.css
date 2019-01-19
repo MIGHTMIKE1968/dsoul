@@ -1,30 +1,3 @@
-/* code that is here, until the first @media block, will apply to any screen size */
-#somethingorother {
-  width: 800px ;
-}
-
-@media screen and (max-width: 320px) {
-  /* comes into effect for screens less than or equal to 320 pixels */
-  #somethingorother {
-    width: 120px ;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 480px) {
-  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
-  #somethingorother {
-    width: 320px ;
-  }
-}
-@media screen and (min-width: 481px) {
-  /* comes into effect for screens larger than or equal to 481 pixels */
-  #somethingorother {
-    width: 480px ;
-  }
-}
-
-/* code that is here will apply to any screen size */
-
-
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -35,9 +8,8 @@
     opacity: 1;
     transform: translate(0); } }
 
-
 body {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 
 .navbar-inverse{
@@ -101,21 +73,16 @@ body {
    padding-bottom: 20px;
 }
 
-h1 {
-	font-family: Amatic SC;
-    font-size: 6rem;
-    text-align: center;
-    padding: 20px 0px 15px 0px;
-    color: #4901a0;
-    text-decoration: none;
-}
-
-h2 {
-	font-family: Cabin;
-	font-size: 2.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #010daa;
+.welcome {
+   display: block;
+   color: #020f84;
+   font-family: Amatic SC;
+   font-size: 6rem;
+   letter-spacing: 1.75rem;
+   text-align: center;
+   text-transform: none;
+   margin-bottom: 30px;
+   animation: moveInRight 8s ease-out;
 }
 
 .two {
@@ -161,6 +128,11 @@ h2 {
     line-height: 1.3887;
 }
 
+.logo {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
 h4 {
 	text-align: center;
 	font-family: Cabin;
@@ -169,33 +141,11 @@ h4 {
 	line-height: normal;
 }
 
+
 h5{
    font-family: Cabin; 
    font-size: 12px;
    padding-bottom: 20px;
-}
-
-hr.style-one {
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
-}
-
-.thumbnail {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #140660;
-}
-
-.social {
-    padding: 20px 0px 20px 0px;
-    text-align: center;
-}
-
-.logo {
-    padding: 20px 0px 0px 0px;
-    text-align: center;
 }
 
 /* Grow */
@@ -254,6 +204,21 @@ a:hover {
     margin-top: -10px;
 }
 
-.welcome {
-   animation: moveInRight 8s ease-in;
+
+#contact {
+	padding: 40px 0;
+	color: #140660;
 }
+
+#contact .btn-default {
+	border: 1px solid #f9d902;
+	background-color: #f9d902;
+	border-radius: 0;
+}
+
+#contact .btn-default:hover {
+	color: #f9d902;
+	background-color: #140660;
+}
+
+
