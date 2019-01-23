@@ -52,7 +52,7 @@ if ($_POST['submit']) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Welcome to Dominican Soul</title>
+    <title>Contact Us</title>
     
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     
@@ -62,6 +62,7 @@ if ($_POST['submit']) {
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 	
 </head>
 
@@ -95,7 +96,6 @@ if ($_POST['submit']) {
           			<ul class="dropdown-menu">
             			<li><a href="casual.html">Casual Dining</a></li>
                         <li><a href="fast.html">Fast Food</a></li>
-            			<li><a href="#">Fine Dining</a></li>
                         <li><a href="bakeries.html">Bakeries</a></li>
                         <li><a href="icecream.html">Ice Cream Parlors</a></li>
           			</ul>
@@ -109,7 +109,7 @@ if ($_POST['submit']) {
                       <li class="dropdown menu">
           		    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SHOPPING<span class="caret"></span></a>
           			<ul class="dropdown-menu">
-            			<li><a href="#">Clothing / Accessories</a></li>
+            			<li><a href="attire.html">Clothing / Accessories</a></li>
                         <li><a href="groceries.html">Super Markets</a></li>
                         <li><a href="pharmacy.html">Pharmacys</a></li>
           			</ul>
@@ -127,7 +127,7 @@ if ($_POST['submit']) {
         			</li>
 				</ul>
 				
-				<ul class="nav navbar-nav navbar-right">
+				<!--<ul class="nav navbar-nav navbar-right">
         			<li><a href="contact.php"><i class="fa fa-envelope envelope" aria-hidden="true"></i></a></li>
         		</ul>
                 
@@ -138,7 +138,7 @@ if ($_POST['submit']) {
 				<button type="text" class="btn btn-normal">
 					<i class="glyphicon glyphicon-search"></i>
                 </button> 
-			    </form>
+			    </form>-->
 					
 			</div>
 			
@@ -203,8 +203,8 @@ if ($_POST['submit']) {
 	
 	<div class="container">
         <h4 class="social">
-            <a href="#"><img src="img/facebook.png" class="hvr-grow social" width="4%" height="4%" alt=""/></a>
-		    <a href="#"><img src="img/twitter.png" class="hvr-grow social" width="4%" height="4%" alt=""/></a>
+            <a href="https://www.facebook.com/DRgotsoul/"><img src="img/facebook.png" class="hvr-grow social" width="4%" height="4%" alt=""/></a>
+		    <a href="https://twitter.com/DRgotsoul"><img src="img/twitter.png" class="hvr-grow social" width="4%" height="4%" alt=""/></a>
             <a href="#"><img src="img/instagram.png" class="hvr-grow social" width="4%" height="4%" alt=""/></a>
             <a href="https://www.youtube.com/channel/UCZV-adYfxKkXK18bYgdEujw"><img src="img/youtube.png" class="hvr-grow social" width="4%" height="4%" alt=""/></a>
         </h4>
@@ -220,7 +220,6 @@ if ($_POST['submit']) {
                 <h4 class="head">DINING</h4>
                 <p><a href="casual.html" class="bake2">Casual Dining</a></p>
                 <p><a href="fast.html" class="bake2">Fast Food</a></p>
-                <p><a href="#">Fine Dining</a></p>
                 <p><a href="bakeries.html" class="bake2">Bakeries</a></p>
                 <p><a href="icecream.html" class="bake2">Ice Cream Parlors</a></p>
             </div>
@@ -232,7 +231,7 @@ if ($_POST['submit']) {
             
             <div class="col-md-2 col-sm-4">
                 <h4 class="head">SHOPPING</h4>
-                <p><a href="#">Clothing / Accessories</a></p>
+                <p><a href="attire.html" class="bake2">Clothing / Accessories</a></p>
                 <p><a href="groceries.html" class="bake2">Super Markets</a></p>
                 <p><a href="pharmacy.html" class="bake2">Pharmacys</a></p>
             </div>
