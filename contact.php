@@ -89,6 +89,7 @@ if ($_POST['submit']) {
           		    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BLOGS<span class="caret"></span></a>
           			<ul class="dropdown-menu">
             			<li><a href="beach2.html">Life's A Beach</a></li>
+                        <li><a href="mt_Isabel.html">Mt. Isabel</a></li>
           			</ul>
         			</li>
                     <li class="dropdown menu">
