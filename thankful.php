@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +26,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     
     <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     
     <link rel="stylesheet" type="text/css" href="css/thanks.css">
@@ -31,10 +39,10 @@
     <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
     
-    <script type="text/javascript"> var infolinks_pid = 3174654; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
-    
 </head>
 <body>
+    
+    <script async="async" data-cfasync="false" src="//tharbadir.com/2?z=2330755"></script>
     
     <nav class="navbar navbar-inverse navbar-fixed-top">
 		
@@ -59,7 +67,6 @@
             			<li><a href="beach2.html">Life's A Beach</a></li>
                         <li><a href="mt_Isabel.html">Mt. Isabel</a></li>
                         <li><a href="thankful.html">Feeling Thankful</a></li>
-                        <li><a href="art.html">Art from the Streets of Puerto Plata</a></li>
           			</ul>
         			</li>
                     <li class="dropdown menu">
@@ -123,9 +130,6 @@
     </script>
     
     <div class="container">
-        
-        <br>
-        <center><iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=48&l=ur1&category=primeent&banner=06GDZC4PE16KAQ62F782&f=ifr&linkID=5ec85b63a5e88a8175bad4a55d7838e1&t=dominicansoul-20&tracking_id=dominicansoul-20" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe></center>
         
         <div class="welcome">
             <h1>Thankful For Another <br> Day In Paradise</h1>
@@ -292,8 +296,6 @@
             <p class="text">
                 I love the healing tranquility of the beaches and their beautiful surroundings. I love the gentle breezes upon my face. I love the sand, the trees and the clear blue skies. I love the long walks I take upon them. I love swimming in their deep blue waters and siting down and watching the waves come in and out off the ocean.</p><br>
             
-            <input type="hidden" name="IL_IN_ARTICLE"><br><br>
-            
             <p class="text">
                 Another major reason I love the beaches is because of the people and all the activities they do here that bring them to life. I like seeing the boats, the surfers and all the colorful kites that people like to fly. I enjoy seeing the people swim, jog, ride their bikes and skateboards. I like seeing the young boys doing their baseball training and the people practicing martial arts. I enjoy watching the street performers or as we call them here, “ninjas” do their thing. I like seeing the beach vendors and their wide assortment of  merchandise. I like seeing all the fancy motorbikes along the beach boulevard. I enjoy going to the little restaurants up and down the beaches. I enjoy seeing the people eating, drinking, laughing, playing their loud music and having a great time.</p><br>
             
@@ -306,6 +308,27 @@
             
         </h3>
         </div>
+    
+        <div class="container">
+              <form method="POST" id="comment_form">
+                  <div class="form-group">
+                      <input type="text" name="comment_name" id="comment_name" 
+                      class="form-control" placeholder="Enter Name"/>
+                  </div>
+                  <div class="form-group">
+                      <textarea name="comment_content" id="comment_content" 
+                      class="form-control" placeholder="Enter Comment"
+                      rows="5"></textarea>
+                  </div>
+                  <div class="form-group">
+                      <input type="submit" name="submit" id="submit" 
+                      class="btn btn-info" value="Submit"/>
+                  </div>
+              </form>
+              <span id="comment_message"></span>
+              <br/>
+              <div id="display_comment"></div>
+         </div>
     
     <div class="container">
         <h4 class="social">
@@ -371,12 +394,51 @@
         </div>
 	</div>
     
-<script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
-    
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
 <script src="thanks.js"></script>
-<script src="form.js"></script>
     
 </body>
 </html>
+
+<script>
+$(document).ready(function(){
+    
+    $('#comment_form').on('submit', function(event){
+        event.preventDefault();
+        var form_data = $(this).serialize();
+        $.ajax({
+            url:"comments.php",
+            method:"POST",
+            data:form_data,
+            dataType:"JSON",
+            success:function(data)
+            {
+                if(data.error != '')
+                {
+                    $('#comment_form')[0].reset();
+                    $('#comment_message').html(data.error);
+                }
+            }
+        })
+    });
+    
+    function load_comment()
+    {
+        $.ajax({
+            url:"fetch_comment.php",
+            method:"POST",
+            success:function(data)
+            {
+                $('#display_comment').html(data);
+            }
+        })
+    }
+                  
+});
+</script>
+
+
+
+
+
+

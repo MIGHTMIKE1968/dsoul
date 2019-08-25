@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -91,6 +92,7 @@ if ($_POST['submit']) {
             			<li><a href="beach2.html">Life's A Beach</a></li>
                         <li><a href="mt_Isabel.html">Mt. Isabel</a></li>
                         <li><a href="thankful.html">Feeling Thankful</a></li>
+                        <li><a href="art.html">Art from the Streets of Puerto Plata</a></li>
           			</ul>
         			</li>
                     <li class="dropdown menu">

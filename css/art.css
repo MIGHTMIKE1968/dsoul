@@ -1,0 +1,410 @@
+/* code that is here, until the first @media block, will apply to any screen size */
+#somethingorother {
+  width: 800px ;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
+
+/* code that is here will apply to any screen size */
+
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+
+body {
+    padding-top: 70px;
+}
+.navbar-inverse{
+  background: #140660;
+}
+
+.navbar-inverse{
+  background: #140660;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.menu {
+  transition: 0.4s;
+  padding: 0 10px;
+}
+
+.menu:hover {
+  background-color: #c3b8f9;
+}
+
+.btn-normal {
+	color: #3c03b7;
+	background: #f9f509;
+	border: none;
+}
+
+.btn-normal:hover {
+	background-color: #c3b8f9;
+	border: none;
+}
+
+.envelope:hover {
+  color: #f9f509;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer {
+   width: 100%;
+   background-color: #440277;
+   color: white;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+h1 {
+	font-family: Love Ya Like A Sister;
+    font-size: 5vw;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    color: #4901a0;
+    line-height: 1;
+    letter-spacing: 4px;
+}
+
+h2 {
+	font-family: Cabin;
+	font-style: normal;
+	line-height: normal;
+    padding-top: 10px;
+}
+
+h3 {
+	font-family: Cabin;
+    font-size: 2.2rem;
+	font-style: normal;
+	line-height: normal;
+}
+
+.text {
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 1.5;
+    word-spacing: normal;
+}
+
+.text2 {
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #6201a8;
+}
+
+h4 {
+	text-align: center;
+	font-family: Cabin;
+	font-style: normal;
+	font-size: 12px;
+	line-height: normal;
+}
+
+h5{
+   font-family: Cabin; 
+   font-size: 12px;
+   padding-bottom: 20px;
+}
+
+
+.social {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+.logo {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+.bg1 {
+    background-image: url("../img/street_art1.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg2 {
+    background-image: url("../img/street_art2.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg3 {
+    background-image: url("../img/street_art3.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg4 {
+    background-image: url("../img/street_art4.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg5 {
+    background-image: url("../img/street_art5.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg6 {
+    background-image: url("../img/street_art6.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg7 {
+    background-image: url("../img/street_art7.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg8 {
+    background-image: url("../img/street_art8.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg9 {
+    background-image: url("../img/street_art9.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg10 {
+    background-image: url("../img/street_art10.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg11 {
+    background-image: url("../img/street_art11.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg12 {
+    background-image: url("../img/street_art12.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg13 {
+    background-image: url("../img/street_art13.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg14 {
+    background-image: url("../img/street_art14.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+#myCarousel {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: rgb(109, 110, 112) 6px 6px 8px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+}
+
+.picture {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%
+}
+
+.blog {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px 0px 10px 0px; 
+}
+
+.name {
+    color: #440277;
+    text-transform: uppercase;
+}
+
+.a {
+    color: #01b707;
+    font-size: 9.5vw;
+}
+
+.beach {
+    font-size: 10.5vw;
+    color: #e5410b;
+}
+
+.beach2 {
+    font-size: 10.5vw;
+    color: #6201a8;
+}
+
+.site {
+    color: #6201a8;
+}
+
+.thumbnail {
+    box-shadow: rgb(109, 110, 112) 6px 6px 8px;
+}
+
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.row {
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.header {
+  padding: 20px 0px 60px 0px;
+}
+
+.head {
+    color:#fffa00;
+    font-family: Cabin; 
+    font-size: 14px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+   color: #adf95c; 
+}
+
+.bake2 {
+    color: white;
+}
+
+.weatherwidget-io {
+    margin-top: -10px;
+}
+
+.welcome {
+   animation: moveInRight 8s ease-out;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.active.right
+    .carousel-fade .carousel-inner > .item.active{
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
