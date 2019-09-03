@@ -202,6 +202,7 @@ hr.style-one {
     text-align: center;
 }
 
+
 /* Float */
 .hvr-float {
   display: inline-block;
@@ -220,6 +221,7 @@ hr.style-one {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
 }
+
 
 /* Grow */
 .hvr-grow {

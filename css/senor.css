@@ -24,6 +24,7 @@
 
 /* code that is here will apply to any screen size */
 
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -81,7 +82,7 @@ body {
 .navbar-brand>img {
   height: 100%;
   width: auto;
-  padding-left: 15px;
+  padding-left: 20px;
   padding-right: 15px;
 }
 
@@ -99,25 +100,42 @@ body {
    padding-bottom: 20px;
 }
 
-h2 {
-	font-family: Amatic SC;
-	font-style: normal;
-	line-height: normal;
+h1 {
+	font-family: Unica One;
+    font-size: 5rem;
     text-align: center;
-    font-size: 9.5rem;
-    color: #4901a0;
-    text-transform: uppercase;
+    padding: 20px 0px 20px 0px;
+    color: black;
+    line-height: normal;
+    letter-spacing: 4px;
 }
 
-.about {
-    font-family: Cabin;
-    text-transform: none;
-    font-size: 2.1rem;
+h2 {
+	font-family: Cabin;
+	font-style: normal;
+	line-height: normal;
+    padding-top: 10px;
+}
+
+h3 {
+	font-family: Cabin;
+    font-size: 2.2rem;
+	font-style: normal;
+	line-height: normal;
+}
+
+.text {
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1.5;
     word-spacing: normal;
 }
 
-.welcome {
-   animation: moveInRight 8s ease-in;
+.text2 {
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #6201a8;
 }
 
 h4 {
@@ -134,8 +152,9 @@ h5{
    padding-bottom: 20px;
 }
 
+
 .social {
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
     text-align: center;
 }
 
@@ -149,89 +168,67 @@ h5{
 }
 
 .bg1 {
-    background-image: url("../img/soulslide1.jpg");
+    background-image: url("../img/senore_rock1.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg2 {
-    background-image: url("../img/soulslide2.jpg");
+    background-image: url("../img/senore_rock2.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg3 {
-    background-image: url("../img/soulslide3.jpg");
+    background-image: url("../img/senore_rock3.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg4 {
-    background-image: url("../img/soulslide4.jpg");
+    background-image: url("../img/senore_rock4.jpgg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg5 {
-    background-image: url("../img/soulslide5.jpg");
+    background-image: url("../img/senore_rock5.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg6 {
-    background-image: url("../img/soulslide6.jpg");
+    background-image: url("../img/senore_rock6.jpgg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 .bg7 {
-    background-image: url("../img/soulslide7.jpg");
+    background-image: url("../img/senore_rock7.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
-.bg8 {
-    background-image: url("../img/soulslide8.jpg");
+.bg7 {
+    background-image: url("../img/senore_rock8.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
-.bg9 {
-    background-image: url("../img/soulslide9.jpg");
+.bg7 {
+    background-image: url("../img/senore_rock9.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
 }
-
-.bg10 {
-    background-image: url("../img/soulslide10.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg11 {
-    background-image: url("../img/soulslide11.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg12 {
-    background-image: url("../img/soulslide12.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
 
 .carousel-fade .carousel-inner .item {
     opacity: 0;
@@ -240,6 +237,54 @@ h5{
 
 .carousel-fade .carousel-inner .active {
     opacity: 1;
+}
+
+#myCarousel {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: rgb(109, 110, 112) 6px 6px 8px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: white;
+}
+
+.picture {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     box-shadow: rgb(109, 110, 112) 6px 6px 8px;
+}
+
+.blog {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px 0px 10px 0px; 
+}
+
+.name {
+    color: #440277;
+    text-transform: uppercase;
+}
+
+.a {
+    color: #01b707;
+    font-size: 9.5vw;
+}
+
+.beach {
+    font-size: 10.5vw;
+    color: #e5410b;
+}
+
+.beach2 {
+    font-size: 10.5vw;
+    color: #6201a8;
+}
+
+.site {
+    color: #6201a8;
 }
 
 
@@ -262,30 +307,9 @@ h5{
   transform: translateY(-8px);
 }
 
-
-/* Grow */
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
 .row {
     text-align: center;
-}
-
-.row2 {
-    margin-right: 100px; 
+    margin-right: 100px;
     margin-left: 100px;
 }
 
@@ -301,7 +325,6 @@ h5{
 
 a:link {
     text-decoration: none;
-    color: white;
 }
 
 a:hover {
@@ -312,31 +335,13 @@ a:hover {
     color: white;
 }
 
-hr.style-one {
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
-}
-
 .weatherwidget-io {
     margin-top: -10px;
 }
 
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+.welcome {
+   animation: moveInRight 8s ease-out;
 }
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 
 @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-fade .carousel-inner > .item.next,
