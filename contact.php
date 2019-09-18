@@ -66,6 +66,16 @@ if ($_POST['submit']) {
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     
     <script type="text/javascript" src="//deloplen.com/apu.php?zoneid=2348330" async data-cfasync="false"></script>
+    
+    <!-- Google -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4644631320500811",
+          enable_page_level_ads: true
+     });
+    </script>
+    <!-- End Google -->
 	
 </head>
 
@@ -96,6 +106,8 @@ if ($_POST['submit']) {
                         <li><a href="thankful.html">Feeling Thankful</a></li>
                         <li><a href="art.html">Art from the Streets of Puerto Plata</a></li>
                         <li><a href="senor_rock.html">Senore Rock Bar And Grill</a></li>
+                        <li><a href="photography.html">The Passion of Ghaffar</a></li>
+                        <li><a href="bucket_list.html">10 Budget-Friendly Things To Do In Puerto Plata</a></li>
           			</ul>
         			</li>
                     <li class="dropdown menu">
