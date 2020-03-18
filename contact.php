@@ -65,7 +65,6 @@ if ($_POST['submit']) {
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     
-    <script type="text/javascript" src="//deloplen.com/apu.php?zoneid=2348330" async data-cfasync="false"></script>
     
     <!-- Google -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -109,6 +108,8 @@ if ($_POST['submit']) {
                         <li><a href="photography.html">The Passion of Ghaffar</a></li>
                         <li><a href="bucket_list.html">10 Budget-Friendly Things To Do In Puerto Plata</a></li>
                         <li><a href="cuisine.html">6 Dominican Dishes You Simply Must Try</a></li>
+                        <li><a href="3tips.html">3 Tips That Will Save Your Vacation Cash</a></li>
+                        <li><a href="cake_boss.html">Dominican Cake Bosses</a></li>
           			</ul>
         			</li>
                     <li class="dropdown menu">

@@ -101,14 +101,15 @@ body {
 }
 
 h1 {
-	font-family: Love Ya Like A Sister;
-    font-size: 7rem;
+	font-family: Mansalva;
+    font-size: 5.5rem;
     text-align: center;
-    padding: 20px 0px 0px 0px;
-    color: #4901a0;
-    line-height: 1;
+    padding: 20px 0px 20px 0px;
+    color: black;
+    line-height: normal;
     letter-spacing: 4px;
 }
+
 
 h2 {
 	font-family: Cabin;
@@ -126,16 +127,23 @@ h3 {
 
 .text {
     text-align: left;
-    font-size: 2rem;
+    font-size: 2.3rem;
     line-height: 1.5;
     word-spacing: normal;
 }
 
 .text2 {
     text-align: left;
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 1.5;
-    color: #6201a8;
+    color: black;
+}
+
+.sub {
+    font-family: Cabin;
+    font-size: 2.2rem;
+	font-style: normal;
+	line-height: normal;
 }
 
 h4 {
@@ -167,127 +175,11 @@ h5{
     text-align: center;
 }
 
-.bg1 {
-    background-image: url("../img/street_art1.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg2 {
-    background-image: url("../img/street_art02.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg3 {
-    background-image: url("../img/street_art03.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg4 {
-    background-image: url("../img/street_art04.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg5 {
-    background-image: url("../img/street_art05.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg6 {
-    background-image: url("../img/street_art06.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg7 {
-    background-image: url("../img/street_art07.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg8 {
-    background-image: url("../img/street_art08.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg9 {
-    background-image: url("../img/street_art09.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg10 {
-    background-image: url("../img/street_art010.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg11 {
-    background-image: url("../img/street_art011.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg12 {
-    background-image: url("../img/street_art012.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg13 {
-    background-image: url("../img/street_art013.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg14 {
-    background-image: url("../img/street_art014.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.carousel-fade .carousel-inner .item {
-    opacity: 0;
-    transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active {
-    opacity: 1;
-}
-
-#myCarousel {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    box-shadow: rgb(109, 110, 112) 6px 6px 8px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: white;
-}
-
 .picture {
      width: 100px;
      height: 100px;
-     border-radius: 50%
+     border-radius: 50%;
+     box-shadow: rgb(109, 110, 112) 6px 6px 8px;
 }
 
 .blog {
@@ -321,8 +213,16 @@ h5{
     color: #6201a8;
 }
 
-.thumbnail {
-    box-shadow: rgb(109, 110, 112) 6px 6px 8px;
+.plan {
+    float: right;
+	margin-left: 20px;
+	margin-bottom: 2px;
+	box-shadow: rgb(109, 110, 112) 6px 6px 8px; 
+    border:6px solid white;
+}
+
+.title{
+    text-align: left;
 }
 
 
@@ -343,23 +243,6 @@ h5{
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
-}
-
-/* Grow */
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
 }
 
 .row {

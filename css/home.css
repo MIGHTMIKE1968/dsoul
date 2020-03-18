@@ -100,11 +100,11 @@ body {
 }
 
 h2 {
-	font-family: Amatic SC;
+	font-family: Sen;
 	font-style: normal;
 	line-height: normal;
     text-align: center;
-    font-size: 9.5rem;
+    font-size: 6rem;
     color: #4901a0;
     text-transform: uppercase;
 }
@@ -117,7 +117,9 @@ h2 {
 }
 
 .welcome {
-   animation: moveInRight 8s ease-in;
+   font-family: Cabin;
+   font-size: 3rem;
+   color: #4901a0;
 }
 
 h4 {
