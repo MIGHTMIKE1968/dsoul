@@ -124,7 +124,9 @@ if ($_POST['submit']) {
                     <li class="dropdown menu">
           		    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESORTS<span class="caret"></span></a>
           			<ul class="dropdown-menu">
-                        <li><a href="resorts.html">Resorts</a></li>
+                        <li><a href="cabarete_resorts.html">Cabarete</a></li>
+                        <li><a href="puerto_plata_resorts.html">Puerto Plata</a></li>
+                        <li><a href="sosua_resorts.html">Sosua</a></li>
           			</ul>
         			</li>
                       <li class="dropdown menu">
